@@ -1,0 +1,40 @@
+.booking-section {
+  padding: 100px 20px;
+  background-color: #e3f2fd;
+  text-align: center;
+}
+
+.booking-title {
+  color: #0d47a1;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.booking-description {
+  color: #333;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.booking-button {
+  display: inline-block;
+  background: #1976d2;
+  color: #ffffff;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 12px rgba(25, 118, 210, 0.3);
+}
+
+.booking-button:hover {
+  background: #1565c0;
+  box-shadow: 0 0 20px rgba(25, 118, 210, 0.4);
+  transform: translateY(-2px);
+}
