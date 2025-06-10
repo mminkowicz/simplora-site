@@ -3,6 +3,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../assets/styles.css';
 
+import { FaTools, FaCogs, FaPlug, FaRocket } from 'react-icons/fa';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
@@ -22,32 +24,36 @@ const Services = () => {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: 'top 80%',
-          toggleActions: 'play none none none',
         },
-        clearProps: 'all' // clears inline styles after animation
+        clearProps: 'all',
       }
     );
   }, []);
 
   return (
-    <section id="services" className="section services-section" ref={sectionRef}>
+    <section id="services" className="section section-light" ref={sectionRef}>
       <h2 className="section-title">Our Services</h2>
+      <p className="section-subtitle">From setup to automation, we handle every step of your system journey.</p>
       <div className="services-grid">
         <div className="service-card">
+          <FaTools className="service-icon" />
           <h3>System Management</h3>
-          <p>We manage your CRM and tools day-to-day so you don’t have to.</p>
+          <p>We manage your CRM and business tools day-to-day so you don’t have to.</p>
         </div>
         <div className="service-card">
+          <FaCogs className="service-icon" />
           <h3>Customization</h3>
-          <p>Tailored solutions built to match your exact workflow.</p>
+          <p>Tailored solutions designed to fit your exact business workflows and needs.</p>
         </div>
         <div className="service-card">
+          <FaPlug className="service-icon" />
           <h3>Integration</h3>
-          <p>Seamlessly connect all your apps, tools, and platforms.</p>
+          <p>Connect all your apps and tools into one seamless, automated system.</p>
         </div>
         <div className="service-card">
+          <FaRocket className="service-icon" />
           <h3>Implementation</h3>
-          <p>We get your systems up and running fast and effectively.</p>
+          <p>We set up and launch your systems fast, efficiently, and ready to scale.</p>
         </div>
       </div>
     </section>
